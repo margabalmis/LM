@@ -3,11 +3,13 @@
 
 
 function multiplicarElementos (array){
-    let total = 0;
+    let total = 0; /*Te dará siempre 0 porque la variable la inicializas a 0, y 0 * número siempre es igual a 0*/
 
     array.forEach((elemento) => {total *= elemento});
     return total;
 }
+
+/*Para saber si es un array usa isArray()*/
 function comprobarTipo (datos){
         
     let tipo = ['string', 'boolean', 'function', 'number'];
@@ -20,6 +22,7 @@ function comprobarTipo (datos){
             console.log("El dato " + datos[index] + " no es correcto."); 
     }
 }
+/*No hace falta que pongas tantos módulos (funciones), al final aumentas la complejidad y realmente en este caso no es necesario*/
 function Ejercicio1(...datos) {
 
     let total = 0;
