@@ -4,6 +4,7 @@ let dato, numeroVeces;
 let datos;
 do {
     numeroVeces++;
+    /* if numeroVeces % 2 == 0 +prompt(...) else Number(prompt(...))*/
     dato = prompt("Escribe un número");
     
     if(isNaN(dato) == false)
@@ -11,3 +12,5 @@ do {
     
 
 } while (isNaN(dato) == false);
+
+//Tienes el array datos, datos.filter(...).sort(...)
